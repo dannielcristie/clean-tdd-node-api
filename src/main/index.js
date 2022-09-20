@@ -1,5 +1,5 @@
 const MongoHelper = require('../infra/helpers/mongo-helper')
-const env = require('./config/env.js')
+const env = require('./config/env')
 
 MongoHelper.connect(env.mongoUrl)
   .then(() => {
